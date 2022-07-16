@@ -5,6 +5,7 @@
     --accent-color: #2196F3;
     --brg-color: #C4C4C4;
     --brg-color-fon: #F5F4FA;
+    --socials-icon-color: #AFB1B8;
 
     --indent: 15px;
     --items: 3;
@@ -130,9 +131,12 @@ a {
 }
 
 .header-link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
     color: var(--text-color);
     font-weight: 500;
@@ -144,6 +148,11 @@ a {
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
+}
+.icon-link{
+    fill: currentColor;
+   
+
 }
 
 .hero {
@@ -220,30 +229,15 @@ a {
 .aside-item {
     min-width: 270px;
 }
-.aside-item::before{
-    content: '';
-    display: block;
+.aside-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     margin-bottom: 30px;
-  
     background-color: var(--brg-color-fon);
-    background-repeat: no-repeat;
-    background-size: 70px 70px;
-    background-position: center;
     border-radius: 4px;
 }
-/*.icon-antenna::before{
-    background-image: url(../css/imagesfon/antenna.svg);   
-}
-.icon-clock::before{
-    background-image: url(../css/imagesfon/clock.svg);   
-}
-.icon-diagram::before{
-    background-image: url(../css/imagesfon/diagram.svg);   
-}
-.icon-astronaut::before{
-    background-image: url(../css/imagesfon/astronaut.svg);   
-}*/
 
 .aside-title {
     color: var(--brand-color);
@@ -254,7 +248,6 @@ a {
     margin-bottom: 10px;
 
 }
-
 
 .aside-text {
     color: var(--text-color);
@@ -316,6 +309,62 @@ a {
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 16px;
+}
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: var(--socials-icon-color);
+
+    outline: 1px solid red;
+}
+
+.social-icon{
+    fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    color: var(--hero-title-color);
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    background-color: transparent;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px; 
+    color: var(--socials-icon-color);
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
 }
 
 .footer {
@@ -362,6 +411,47 @@ a {
 .footer-link:focus {
     color: var(--accent-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-social {
+    
+}
+.footer-title{
+ 
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-title-color);
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+     
+}
+
+.footer-social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--hero-title-color);
+
+    outline: 1px solid red;
+}
+
+.footer-icon{
+    fill: currentColor;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+ 
 }
 
 
