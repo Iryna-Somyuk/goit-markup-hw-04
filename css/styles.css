@@ -145,14 +145,14 @@ a {
     letter-spacing: 0.02em;
     text-decoration: none;    
 }
+
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
 }
+
 .icon-link{
     fill: currentColor;
-   
-
 }
 
 .hero {
@@ -196,6 +196,7 @@ a {
     padding: 10px 32px;
     min-width: 200px;
 }
+
 .hero-btn:hover,
 .hero-btn:focus,
 .hero-btn:active {
@@ -311,12 +312,14 @@ a {
     text-align: center;
     margin-bottom: 16px;
 }
+
 .social-list{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
+
 .social-link{
     display: flex;
     justify-content: center;
@@ -327,12 +330,13 @@ a {
     border-radius: 50%;
     color: var(--socials-icon-color);
 
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 .social-icon{
     fill: currentColor;
 }
+
 .social-link:hover,
 .social-link:focus {
     background-color: var(--accent-color);
@@ -345,6 +349,7 @@ a {
     justify-content: center;
     gap: 30px;
 }
+
 .clients-link {
     display: flex;
     justify-content: center;
@@ -362,7 +367,7 @@ a {
 }
 
 .clients-link:hover,
-.clients-link:focus {
+.clients-link:focus  {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
@@ -412,10 +417,15 @@ a {
     color: var(--accent-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.footer-social {
-    
+
+.main-footer {
+     display: flex;
+     align-items: center;
+     gap: 70px;
 }
-.footer-title{
+
+.footer-title {
+    margin-bottom: 20px;
  
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -428,8 +438,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-     
+    gap: 10px;    
 }
 
 .footer-social-link{
@@ -442,14 +451,14 @@ a {
     border-radius: 50%;
     color: var(--hero-title-color);
 
-    outline: 1px solid red;
 }
 
 .footer-icon{
     fill: currentColor;
 }
+
 .footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link:focus  {
     background-color: var(--accent-color);
  
 }
@@ -480,8 +489,7 @@ a {
 }
 .filtre-btn:hover,
 .filtre-btn:focus,
-.filtre-btn:active
- {
+.filtre-btn:active {
     background-color: var(--accent-color);
     color: var(--hero-title-color);
     cursor: pointer;
